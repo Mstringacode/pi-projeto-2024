@@ -1,0 +1,501 @@
+/*geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+/*svg color: #1c71d8*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+a:hover {
+  background-color: none !important;
+  border-radius: 10px;
+}
+
+.a-logo:hover {
+  background-color: #4d46b356;
+}
+
+a:not(:hover) {
+  border-radius: 10px;
+}
+
+a:active {
+  color: black;
+  background-color: #4D46B3;
+  border-radius: 0;
+}
+
+.dropdown-item:active {
+  background-color: #4D46B3;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/*header*/
+
+
+
+/*index*/
+
+.fundo-nav {
+  opacity: 0.5;
+  background-color: #6371BF;
+  z-index: 1px;
+}
+
+.index-logo {
+  margin: auto;
+}
+
+.img-logo0 {
+  border-radius: 111111px;
+  image-rendering: auto;
+  background-color: white;
+  opacity: 1;
+}
+
+.img-logo1 {
+  border-radius: 111111px;
+  filter: grayscale(100%) brightness(10000%);
+  /* Remove toda a cor e ajusta o brilho */
+}
+
+.img-logo2 {
+  border-radius: 111111px;
+  filter: brightness(0%);
+  /* Ajusta o brilho ao mínimo */
+}
+
+.texto-0 {
+  font-size: 14px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+/*Animações*/
+@keyframes vento {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.sopro-vento {
+  animation: vento 0.5s ease-in-out;
+}
+
+.img-minimalista {
+  border-radius: 10px;
+  /* Adiciona cantos arredondados */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  /* Adiciona sombra branca suave */
+}
+
+.container-documentacao {
+  background-color: #212121;
+  width: 100%;
+  height: 370px;
+}
+
+
+/*--
+pagina contato
+--*/
+.bg-card {
+  background-color: #212121 !important;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #4D46B3;
+  color: white;
+  text-align: center;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.developer {
+  text-align: center;
+}
+
+.developer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.developer h5 {
+  margin-bottom: 5px;
+}
+
+.developer p {
+  color: #6c757d;
+}
+
+/*tela login*/
+body.body-login {
+  /* Define a imagem de fundo */
+  background-image: url('../imgs/fundo-login.jpg');
+
+  /* Garante que a imagem de fundo cubra toda a tela */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Mantém o conteúdo da página fixo */
+  background-attachment: fixed;
+}
+
+.box-login {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background-color: #6371BF;
+  margin-left: 200px;
+  top: 120px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 2);
+  /* sombra da caixa */
+  color: white;
+  padding: 24px;
+}
+
+.formulario-login {
+  margin: 10px;
+  padding: 1px;
+}
+
+.logo-box-login {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  margin: 10px;
+}
+
+.forms-login {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.input-login {
+  padding: 1px;
+  margin: 0 0 0 12px;
+  width: 80%;
+}
+
+.text-reset-pass {
+  font-size: 14px;
+  margin-left: 2px;
+  padding: 12px;
+  color: white;
+}
+.text-reset-pass:hover{
+  color: #03178C;
+}
+.text-box-login {
+  font-size: 24px;
+}
+
+/*verificar problema com o hover e o espaço da box em links*/
+
+.a-reset-pass:hover {
+  background-color: none;
+  padding: 0;
+  margin: 0;
+}
+
+.botao-login {
+  margin: 10px;
+  padding: 1px;
+  width: 80px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  background-color: #6371BF;
+}
+.botao-login:hover{
+  color: #03178C;
+}
+
+.text-registrar {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+.cor-register {
+  color: #0f0b47 !important;
+}
+
+/*página registro*/
+body.body-registro {
+  /* Define a imagem de fundo */
+  background-image: url('../imgs/tela-registro.jpg');
+
+  /* Garante que a imagem de fundo cubra toda a tela */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Mantém o conteúdo da página fixo */
+  background-attachment: fixed;
+}
+
+.box-registrar {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  background-color: #6371BF;
+  opacity: 0.9;
+  margin-left: 200px;
+  top: 120px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 2);
+  /* sombra da caixa */
+  color: white;
+  padding: 24px;
+}
+
+.credencial-incorreta {
+  color: rgba(255, 0, 0, 0.767);
+  margin-left: 10px;
+  padding: 1px;
+  font-weight: 700;
+}
+
+/*página download*/
+.pasta-download {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  /* sombra da caixa */
+}
+
+/*documentacao*/
+.conteudo-documentacao {
+  margin-top: 30px;
+  /* Espaçamento superior */
+  margin-bottom: 30px;
+  /* Espaçamento inferior */
+}
+
+.subtitulo-documentacao {
+  color: #343a40;
+  /* Cor do subtitulo */
+}
+
+.paragrafo-documentacao {
+  color: #333;
+  /* Cor do parágrafo */
+}
+
+.lista-instalacao,
+.lista-contribuicao {
+  list-style-type: none;
+  /* Remover marcadores da lista */
+  padding-left: 0;
+  /* Remover espaçamento à esquerda da lista */
+}
+
+.item-lista {
+  padding: 10px;
+  /* Espaçamento interno do item da lista */
+  border-bottom: 1px solid #ccc;
+  /* Adicionar linha de divisão entre os itens */
+}
+
+.item-lista:last-child {
+  border-bottom: none;
+  /* Remover borda inferior do último item */
+}
+
+.codigo-destaque {
+  background-color: #f8f9fa;
+  /* Cor de fundo para destacar código */
+  padding: 10px;
+  /* Espaçamento interno */
+}
+
+/*pagina usuario*/
+.nav-esquerda {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mt-nav {
+  /*espaçamento da navbar*/
+  margin: 90%;
+}
+
+.texto-nav {
+  font-size: 24px;
+}
+
+.texto-nav-pequeno {
+  font-size: 18px;
+}
+
+.texto-menu {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.bg-nav01 {
+  background-color: #212121 !important;
+}
+
+.toggler-color-nav {
+  background-color: white;
+}
+
+.navbar-nav{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 10000px;
+}
+
+.box-texto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-texto h1{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 78px;
+  color: #03178C;
+  font-weight: 700;
+}
+
+.box-texto p{
+  display: flex;
+  justify-content: center;
+  font-size: 59px;
+  z-index: 10;
+  color: #031CA6;
+}
+
+.box-texto img{
+  position: fixed;
+  max-width: 100%;
+  margin-top: 41%;
+  opacity: 70%;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+/*pagina inicial*/
+.masthead {
+  background-color: #f8f9fa;
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+}
+
+.container{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+.img-logo{
+  width: 500px;
+}
+
+.img-in{
+  display: flex;
+  width: 100px;
+}
+.ini-cadastro{
+  background-color: white;
+}

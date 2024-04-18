@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - PuriAr</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body-registro">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fundo-nav fixed-top">
+      <div class="container-fluid">
+        <img class="img-logo1" src="../imgs/aetherius.png" width="98" height="98" alt="" srcset="">
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <br><br><br><br><br>
+
+  <main>
+    <div class="box-registrar">
+
+      <div class="logo-box-login text-box-login">Aetherius</div>
+
+      <div class="forms-login">
+        <form action="../php/registrar.php" method="post">
+          <label class="formulario-login" for="email">E-mail</label>
+          <input class="input-login" type="text" name="email" id="email">
+          <label class="formulario-login" for="aniversario">Data de nascimento</label>
+          <input class="input-login" type="date" name="aniversario" id="aniversario">
+          <label class="formulario-login" for="senha">Senha</label>
+          <input class="input-login" type="password" name="senha" id="senha">
+          <label class="formulario-login" for="senha">Confirme a senha</label>
+          <input class="input-login" type="password" name="senha" id="senha">
+          <button class="botao-login mt-4" type="submit">Registrar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!--javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
